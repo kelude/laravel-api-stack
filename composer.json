@@ -1,0 +1,30 @@
+{
+    "name": "kelude/laravel-api-stack",
+    "description": "Laravel API stack.",
+    "keywords": ["laravel", "api"],
+    "license": "MIT",
+    "require": {
+        "php": "^8.2.0",
+        "illuminate/console": "^11.0",
+        "illuminate/filesystem": "^11.0",
+        "illuminate/support": "^11.0",
+        "symfony/console": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kelude\\LaravelApiStack\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kelude\\LaravelApiStack\\ApiStackServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
